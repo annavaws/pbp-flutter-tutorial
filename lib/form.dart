@@ -106,7 +106,7 @@ class _MyFormPageState extends State<MyFormPage> {
                           Container(
                           margin: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey),
+                              border: Border.all(color: Color.fromARGB(255, 107, 96, 96)),
                               borderRadius: BorderRadius.circular(5),
                           ),
                           child: Column(
@@ -225,7 +225,9 @@ class _MyFormPageState extends State<MyFormPage> {
                             style: TextStyle(color: Colors.white),
                           ),
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.blue),
+                              backgroundColor: MaterialStateProperty.all(Color.fromARGB(255, 0, 85, 146)),
+                              overlayColor: MaterialStateProperty.all(Color.fromARGB(255, 1, 227, 58)),                            
+                              minimumSize: MaterialStateProperty.all(const Size(200, 40)),
                           ),
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
